@@ -1,0 +1,51 @@
+from instance_type import InstanceType
+
+trn1_2xlarge = InstanceType(
+    instance_family="trn1",
+    instance_size="2xlarge",
+    free_tier_eligible=False,
+    bare_metal=False,
+    hypervisor="Nitro",
+    vcpus=8,
+    architecture="x86_64",
+    cores=8,
+    valid_cores=[2, 4, 8],
+    threads_per_core=1,
+    valid_threads_per_core=[1],
+    sustained_clock_speed=3.5,
+    memory_gb=32.0,
+    storage_gb=None,
+    storage_type=None,
+    network_performance="Up to 25 Gigabit",
+    instance_storage_gb=None,
+    gpu=True,
+    gpu_count=1,
+    gpu_memory_gb=16.0,
+    eni=4,
+    ipv6_support=True
+)
+
+trn1_32xlarge = InstanceType(
+    instance_family="trn1",
+    instance_size="32xlarge",
+    free_tier_eligible=False,
+    bare_metal=False,
+    hypervisor="Nitro",
+    vcpus=128,
+    architecture="x86_64",
+    cores=128,
+    valid_cores=[32, 64, 128],
+    threads_per_core=1,
+    valid_threads_per_core=[1],
+    sustained_clock_speed=3.5,
+    memory_gb=512.0,
+    storage_gb=None,
+    storage_type=None,
+    network_performance="800 Gigabit",
+    instance_storage_gb=None,
+    gpu=True,
+    gpu_count=16,
+    gpu_memory_gb=256.0,
+    eni=50,
+    ipv6_support=True
+)

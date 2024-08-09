@@ -1,0 +1,51 @@
+from instance_type import InstanceType
+
+p4d_24xlarge = InstanceType(
+    instance_family="p4d",
+    instance_size="24xlarge",
+    free_tier_eligible=False,
+    bare_metal=False,
+    hypervisor="Nitro",
+    vcpus=96,
+    architecture="x86_64",
+    cores=96,
+    valid_cores=[24, 48, 96],
+    threads_per_core=1,
+    valid_threads_per_core=[1],
+    sustained_clock_speed=3.1,
+    memory_gb=1152.0,
+    storage_gb=8000,
+    storage_type="NVMe SSD",
+    network_performance="400 Gigabit",
+    instance_storage_gb=8000,
+    gpu=True,
+    gpu_count=8,
+    gpu_memory_gb=320.0,
+    eni=8,
+    ipv6_support=True
+)
+
+p4de_24xlarge = InstanceType(
+    instance_family="p4de",
+    instance_size="24xlarge",
+    free_tier_eligible=False,
+    bare_metal=False,
+    hypervisor="Nitro",
+    vcpus=96,
+    architecture="x86_64",
+    cores=96,
+    valid_cores=[24, 48, 96],
+    threads_per_core=1,
+    valid_threads_per_core=[1],
+    sustained_clock_speed=3.1,
+    memory_gb=1152.0,
+    storage_gb=8000,
+    storage_type="NVMe SSD",
+    network_performance="400 Gigabit",
+    instance_storage_gb=8000,
+    gpu=True,
+    gpu_count=8,
+    gpu_memory_gb=320.0,
+    eni=8,
+    ipv6_support=True
+)

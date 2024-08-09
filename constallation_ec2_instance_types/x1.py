@@ -1,0 +1,51 @@
+from instance_type import InstanceType
+
+x1_16xlarge = InstanceType(
+    instance_family="x1",
+    instance_size="16xlarge",
+    free_tier_eligible=False,
+    bare_metal=False,
+    hypervisor="Xen",
+    vcpus=64,
+    architecture="x86_64",
+    cores=64,
+    valid_cores=[16, 32, 64],
+    threads_per_core=2,
+    valid_threads_per_core=[1, 2],
+    sustained_clock_speed=2.3,
+    memory_gb=976.0,
+    storage_gb=1920,
+    storage_type="SSD",
+    network_performance="10 Gigabit",
+    instance_storage_gb=1920,
+    gpu=False,
+    gpu_count=0,
+    gpu_memory_gb=0,
+    eni=8,
+    ipv6_support=True
+)
+
+x1_32xlarge = InstanceType(
+    instance_family="x1",
+    instance_size="32xlarge",
+    free_tier_eligible=False,
+    bare_metal=False,
+    hypervisor="Xen",
+    vcpus=128,
+    architecture="x86_64",
+    cores=128,
+    valid_cores=[32, 64, 128],
+    threads_per_core=2,
+    valid_threads_per_core=[1, 2],
+    sustained_clock_speed=2.3,
+    memory_gb=1952.0,
+    storage_gb=3840,
+    storage_type="SSD",
+    network_performance="25 Gigabit",
+    instance_storage_gb=3840,
+    gpu=False,
+    gpu_count=0,
+    gpu_memory_gb=0,
+    eni=8,
+    ipv6_support=True
+)

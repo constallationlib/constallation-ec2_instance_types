@@ -1,0 +1,51 @@
+from instance_type import InstanceType
+
+dl1_2xlarge = InstanceType(
+    instance_family="dl1",
+    instance_size="2xlarge",
+    free_tier_eligible=False,
+    bare_metal=False,
+    hypervisor="Nitro",
+    vcpus=8,
+    architecture="x86_64",
+    cores=8,
+    valid_cores=[2, 4, 8],
+    threads_per_core=1,
+    valid_threads_per_core=[1],
+    sustained_clock_speed=3.5,
+    memory_gb=32.0,
+    storage_gb=900,
+    storage_type="NVMe SSD",
+    network_performance="Up to 25 Gigabit",
+    instance_storage_gb=900.0,
+    gpu=True,
+    gpu_count=1,
+    gpu_memory_gb=24.0,
+    eni=4,
+    ipv6_support=True
+)
+
+dl1_24xlarge = InstanceType(
+    instance_family="dl1",
+    instance_size="24xlarge",
+    free_tier_eligible=False,
+    bare_metal=False,
+    hypervisor="Nitro",
+    vcpus=96,
+    architecture="x86_64",
+    cores=96,
+    valid_cores=[24, 48, 96],
+    threads_per_core=1,
+    valid_threads_per_core=[1],
+    sustained_clock_speed=3.5,
+    memory_gb=768.0,
+    storage_gb=7200,
+    storage_type="NVMe SSD",
+    network_performance="400 Gigabit",
+    instance_storage_gb=7200.0,
+    gpu=True,
+    gpu_count=8,
+    gpu_memory_gb=192.0,
+    eni=50,
+    ipv6_support=True
+)

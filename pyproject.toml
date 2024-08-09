@@ -1,0 +1,14 @@
+[tool.poetry]
+name = "constallation-ec2-instance-types"
+version = "1.0.0"
+description = "A library containing all the AWS instance types for use with constallation-ec2"
+authors = ["Coulter Stutz <coultercash@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = ">=3.8.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
